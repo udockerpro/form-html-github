@@ -8,7 +8,7 @@
     <title>form-example</title>
 </head>
 
-<body>
+<body align="center">
 
 
     <h1 align="center">FORM EXAMPLE</h1>
@@ -58,30 +58,36 @@
             <option value="Islamabad">Islamabad</option>
             <option value="Hyderabad">Hyderabad</option>
 
-            <p>Do you play any of the following instruments?
-                    (You can select more than one option by holding
-                    down control on a PC or command key on a Mac
-                    while selecting different options.)</p>
-                    <select name="instruments" size="2" multiple="multiple">
-                        <option value="guitar" selected="selected">Guitar</option>
-                        <option value="drum">Drum</option>
-                        <option value="keyboard"></option>
-                        <opt
-                    </select>
+        </select>
+
+        <p>Do you play any of the following instruments?
+            (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)</p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">
+                Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+
+        <hr />
+
+        <p>Upload your C.V in pdf format</p>
+        <input type="file" name="user-cv" /> <br />
+        <input type="submit" value="upload" />
 
 
-            </table>
+
+
+
+
+
+
+
 
     </form>
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
