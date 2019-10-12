@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>form-example</title>
 </head>
 
 <body>
@@ -15,66 +15,62 @@
 
     <form>
 
-        <table align="center" border="1">
-
-            <tr align="center">
-                <p>
-                    <td> First name :</td>
-                    <td><input type="text" name="username" size="15" maxlength="30" /> </td>
-                    <td>Last name :</td>
-                    <td> <input type="text" name="username" size="15" maxlength="30" /></td>
-                </p>
-            </tr>
 
 
-            <tr>
-                <p>
-                    <td> Password :</td>
-                    <td><input type="password" name="password" size="10" maxlength="30" /> </td>
-                    <td> </td>
-                    <td> </td>
-                </p>
 
-            </tr>
-
-            <tr>
-                <p>
-                    <td>Confirm Password :</td>
-                    <td> <input type="password" name="password" size="10" maxlength="30" /> </td>
-                    <td> </td>
-                    <td> </td>
-                </p>
-            </tr>
-
-            <tr>
-                <td>Gender :</td>
-            </tr>
-
-            <tr>
-                <td> <input type="radio" name="gender" value="Male" /> Male </td>
-                <td> <input type="radio" name="gender" value="Female" /> Female </td>
-
-            </tr>
-
-            <tr>
-                <td>More Information :</td>
-            </tr>
-
-            <tr>
-                    <td colspan="4"> <input type="checkbox" name="001" value=""> Pakistani
-                        <input type="checkbox" name="001" value=""> Married
-                        <input type="checkbox" name="001" value=""> English
-                        <input type="checkbox" name="001" value=""> Urdu </td>
-            </tr>>
+        <p>
+            First name :
+            <input type="text" name="username" size="15" maxlength="30" />
+            Last name :
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
 
 
 
 
+        <p>
+            Password :
+            <input type="password" name="password" size="10" maxlength="30" />
+        </p>
+
+        <p>
+            Confirm Password :
+            <input type="password" name="password" size="10" maxlength="30" />
+        </p>
+
+
+        <p>Gender :</p>
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
 
 
 
+        <p>More Information :</p>
+        <input type="checkbox" name="001" value=""> Pakistani
+        <input type="checkbox" name="001" value=""> Married
+        <input type="checkbox" name="001" value=""> English
+        <input type="checkbox" name="001" value=""> Urdu
 
-        </table>
+        <br />
+        <p>Select City</p>
+        <select name="city">
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Hyderabad">Hyderabad</option>
+
+            <p>Do you play any of the following instruments?
+                    (You can select more than one option by holding
+                    down control on a PC or command key on a Mac
+                    while selecting different options.)</p>
+                    <select name="instruments" size="2" multiple="multiple">
+                        <option value="guitar" selected="selected">Guitar</option>
+                        <option value="drum">Drum</option>
+                        <option value="keyboard"></option>
+                        <opt
+                    </select>
+
+
+            </table>
 
     </form>
 
