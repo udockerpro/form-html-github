@@ -6,88 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>form-example</title>
+    <style>
+        body {
+            background-color:rgb(19, 104, 138);
+        }
+        table {
+            width:70%; background-color: rgb(29, 142, 187); color:rgb(red, green, rgb(7, 7, 37)); 
+        }
+    </style>
 </head>
 
 <body align="center">
 
+    <fieldset size="70">
+        <legend> NAME & EMAIL</legend>
 
-    <h1 align="center">FORM EXAMPLE</h1>
+    <h1 align="center"> REGISTRATION FORM </h1>
 
-    <form>
+    <table border="1" align="center" cellpadding="5" cellspacing="10">
 
+        <form>
 
+            
+               
 
+            <tr>
 
-        <p>
-            First name :
-            <input type="text" name="username" size="15" maxlength="30" />
-            Last name :
-            <input type="text" name="username" size="15" maxlength="30" />
-        </p>
-
-
-
-
-        <p>
-            Password :
-            <input type="password" name="password" size="10" maxlength="30" />
-        </p>
-
-        <p>
-            Confirm Password :
-            <input type="password" name="password" size="10" maxlength="30" />
-        </p>
+                <td> Full Name : </td>
+                <td colspan="2" align=""> <input type="text" name="username" size="30"/> </td>
 
 
-        <p>Gender :</p>
-        <input type="radio" name="gender" value="Male" /> Male
-        <input type="radio" name="gender" value="Female" /> Female
+            </tr>
+
+            <tr>
+                <td> Email adress </td>
+                <td align="" colspan="2"> <input type="text" name="email" size="25"> </td>
+            </tr>
+
+            
+
+            <tr>
+                <td> Password : </td>
+                <td colspan="2" align=""> <input type="password" name="password" size="8"> </td>
+            </tr>
+
+            <tr>
+                <p>
+                    <td> Confirm Password : </td>
+                    <td colspan="2" align=""> <input type="password" name="password" size="8"> </td>
+                </p>
+            </tr>
 
 
+            <tr>
+                <p>
+                    <td> Contact No: </td>
+                    <td colspan="2" align=""> <input type="text" name="contact no:" size="12"> </td>
+                </p>
+            </tr>
 
-        <p>More Information :</p>
-        <input type="checkbox" name="001" value=""> Pakistani
-        <input type="checkbox" name="001" value=""> Married
-        <input type="checkbox" name="001" value=""> English
-        <input type="checkbox" name="001" value=""> Urdu
+            <tr>
+                <td>
+                    <p> Gender : </p>
+                </td>
+                <td colspan="2" align="center"> <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female </td>
+            </tr>
 
-        <br />
-        <p>Select City</p>
-        <select name="city">
-            <option value="Karachi">Karachi</option>
-            <option value="Islamabad">Islamabad</option>
-            <option value="Hyderabad">Hyderabad</option>
+            <br>
 
-        </select>
+            <tr>
+                <td>
+                    <p> Select City : </p>
+                </td>
 
-        <p>Do you play any of the following instruments?
-            (You can select more than one option by holding
-            down control on a PC or command key on a Mac
-            while selecting different options.)</p>
-        <select name="instruments" size="3" multiple="multiple">
-            <option value="guitar" selected="selected">
-                Guitar</option>
-            <option value="drums">Drums</option>
-            <option value="keyboard" selected="selected">Keyboard</option>
-            <option value="bass">Bass</option>
-        </select>
+                <td colspan="2" align="center"> <select name="select city">
+                        <option value="Karachi"> Karachi </option>
+                        <option value="Islamabad"> Islamabad </option>
+                        <option value="Hyderabad"> Hyderabad </option>
+                        <option value="Peshawar"> Peshawar </option>
+                </td>
 
-        <hr />
+                </select>
+            </tr>
 
-        <p>Upload your C.V in pdf format</p>
-        <input type="file" name="user-cv" /> <br />
-        <input type="submit" value="upload" />
+            <tr>
+                <td>
+                    <p> Upload C.V Pdf file :</p>
+                </td>
+                <td align="center"> <input type="file" name="user-cv"> </td>
+                <td> <input type="submit" value="upload" /> </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="center" border="1"> <input type="image" src="Submit-Button-PNG-Photos.png" height="50" width=150"> </td>
+            </tr>
+
+        </form>
+
+    </table>
+
+    </fieldset>
 
 
-
-
-
-
-
-
-
-
-    </form>
 </body>
 
 </html>
